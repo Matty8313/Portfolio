@@ -1,0 +1,163 @@
+$mycolor: #262626;
+$secondary-color:#ffffffef;
+$font-color:rgb(0, 0, 0);
+$height-header:100px;
+$font-size:30px;
+$yellow-col:#ffdd00;
+$next-color:#2c2c2c;
+
+$primary-color: #00cfff;
+$secondary-color:#262626;
+$third-color:rgb(187, 187, 187);
+$next-color:#525252;
+p{
+    color: $mycolor;
+    
+}
+ul{
+    list-style-type: none;
+    margin:0px;
+    height: $height-header;
+    padding-left: 0px;
+    width: 60vw;
+    margin: auto;
+
+    
+    
+}
+#item{
+    color:$yellow-col;
+    
+}
+.list>a{
+    width: 18%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    height: 36px;
+    border-radius: 14px;
+    margin-left: 5px;
+    background-color: $next-color;
+    border: 3px solid $primary-color;
+}
+.list>a:hover{
+    background-color: $next-color;
+    color: $primary-color;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 0px;
+}
+
+    
+#Logo2{
+    margin: 0px;
+    float: left;
+    height: 100px;
+    width: 200px;
+    
+}
+#Logo2:hover{
+    border: 3px solid $yellow-col;
+}
+
+header{
+    height: 100px;
+    position: absolute;
+    width: 99vw;
+    display: flex;
+    animation-duration: 1s;
+    background-color: #2220;
+    z-index: 3;
+
+    
+}
+@keyframes ChangeBackground{
+    0%{
+        background-color: #00ffe700;
+    }
+    100%{
+        background-color: rgb(106, 135, 159);
+    }
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+}
+#btn-x{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    animation: none;
+    background-color: black;
+    color: white;
+    margin-right: 19px;
+}
+#btn-x:hover{
+    width:75px;
+    background-color: $mycolor;
+}
+
+@media screen and (max-width: 500px) {
+    .list{
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        margin-top: 100px;
+        background-color: $mycolor;
+        width: 100vw;
+        margin-top: 63px;
+        padding: 16px;
+        
+    }
+    ul>a{
+        width: 100%!important;
+        padding: 10px;
+        text-align: center;
+        padding-left: 0px!important;
+        border: 1px solid white;
+       
+    }
+    
+    #btn-x{
+        display: block;
+    }
+    #background {
+        height: 184px;
+        }
+    .list > a {
+    margin-top: 10px;
+    padding: 0px;
+
+}
+}
+#hello {
+    position: absolute;
+    margin-top: 15vw;
+    margin-left: 5vw;
+    }
+    @media screen and (max-width: 1150px){
+        #hello>h1{
+            display: none;
+        }
+        #hello>p{
+            display: none;
+        }
+        #backDIV{
+            display: none;
+        }
+        #background{
+            height: 20vh;
+        }
+    }
+#BackVideo {
+    background-color: #00cfff;
+    height: 56vw;
+}

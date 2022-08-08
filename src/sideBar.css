@@ -1,0 +1,37 @@
+p {
+  color: green;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  height: 100px;
+  padding-left: 0px;
+}
+
+ul > li {
+  float: left;
+  width: 20%;
+  font-size: 30px;
+  margin-top: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+li:hover {
+  background-color: #00ffe7;
+  border-radius: 100px;
+  color: white;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.937254902);
+  height: 100px;
+  height: 100px;
+  position: fixed;
+  width: 100vw;
+}
+
+body {
+  background-color: grey;
+}/*# sourceMappingURL=sideBar.css.map */

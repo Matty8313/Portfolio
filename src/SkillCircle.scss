@@ -1,0 +1,22 @@
+$primary-color: #00cfff;
+$secondary-color:#262626;
+$third-color:rgb(187, 187, 187);
+$next-color:#525252;
+#fuel{
+    background-color: $primary-color;
+    width: 2vw;
+    height: 2vw;
+    float: left;
+    margin: 1vw;
+    border-radius: 100%;
+    justify-content:center;
+}
+#empty{
+    background-color: $third-color;
+    width: 2vw;
+    height: 2vw;
+    float: left;
+    margin: 1vw;
+    border-radius: 100%;
+    justify-content:center;
+}

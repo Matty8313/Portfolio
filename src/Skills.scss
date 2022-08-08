@@ -1,0 +1,63 @@
+$primary-color: #00cfff;
+$secondary-color:#262626;
+$third-color:rgb(187, 187, 187);
+$next-color:#525252;
+.SkillDIV {
+    width: 30vw;
+    float: left;
+    margin: 1vw;
+    background-color: $next-color;
+    color: white;
+    height: auto;
+    padding: 2vw;
+    border-radius: 25px;
+    position: relative;
+    animation-name: ShowSkill;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+    &p{
+        color: white;
+    }
+  }
+.SkillDIV p{
+    color: white;
+}
+.SkillDIV summary{
+    font-weight: 700;
+}
+@media only screen and (max-width:793px){
+    .SkillDIV{
+        width:80vw;
+        margin: 10vw;
+    }
+}
+@keyframes ShowSkill {
+    0%{
+        bottom: -50vh;
+    }
+    100%{
+        bottom: 0vw;
+    }
+}
+
+#Skills{
+    padding-top: 100px;
+    padding: 10vw;
+    background-color: $next-color;
+    color: $third-color;
+    font-size: 30px;
+    text-align: justify;
+}
+#Skills h1{
+    color: $primary-color;
+}
+#bodyg{
+    width: 99vw;
+    height: 100%;
+    background-color: $third-color;
+}
+#Irow{
+    height: 300px;
+    background-color: white;
+}
