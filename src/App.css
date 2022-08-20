@@ -30,7 +30,7 @@ button{
   height: 40px;
   border: none;
 }
-button:hover{
+.btn-2-n:hover{
   width:150px;
   animation-name: btn-slide;
   animation-duration: 1s;

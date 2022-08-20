@@ -1,8 +1,7 @@
 import React from 'react';
-import Kloc from './Kloc';
 import Klocreverse from './Klocreverse';
-import BackGround from './BackGround';
 import "./KlocR.scss";
+import Portfolio from "./Portfolio";
 
 
 
@@ -11,7 +10,7 @@ export default function Logo() {
   return (
     <div >
 
-        <BackGround/>
+        <Portfolio/>
         <div id="upper-margin">
         <Klocreverse id="upper-margin "link="/About"txt="Until September, I am a student of finance and economics because I have to defend my BA thesis. I am an amateur programmer, because I like it very much that it gives many opportunities to create interesting and useful things for people" about="About"
                 link2="/Skills" txt2="

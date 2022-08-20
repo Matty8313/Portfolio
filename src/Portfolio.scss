@@ -1,0 +1,41 @@
+$primary: #01fe87;
+$seconday: #252839;
+
+#writing{
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: $seconday;
+    height: 50vh;
+    position: relative;
+
+}
+#string{
+    position: relative;
+    font-size: 6vw;
+    -webkit-text-stroke: 0.2vw $primary;
+    color:$seconday;
+    width: 29vw;
+    top: 29vh;
+    left: 4vh;
+}
+#string::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 50vw;
+    height: 100%;
+    color: $primary;
+    -webkit-text-stroke:rgba(0, 0, 0, 0);
+    border-right: 2px solid $primary;
+    overflow: hidden;
+    animation: Animates 6s linear infinite;
+
+}
+@keyframes Animates{
+    0%,10%,100%{
+        width: 0%;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}

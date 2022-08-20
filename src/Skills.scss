@@ -1,7 +1,7 @@
-$primary-color: #00cfff;
+$primary-color: #01fe87;
 $secondary-color:#262626;
 $third-color:rgb(187, 187, 187);
-$next-color:#525252;
+$next-color:#252839;
 .SkillDIV {
     width: 30vw;
     float: left;
@@ -43,15 +43,16 @@ $next-color:#525252;
 
 #Skills{
     padding-top: 100px;
-    padding: 10vw;
+    padding: 20px;
+    padding-top: 11%;
     background-color: $next-color;
     color: $third-color;
-    font-size: 3vw;
+    font-size: 119%;
     text-align: justify;
 }
 #Skills h1{
     color: $primary-color;
-    font-size: 3vw;
+    font-size: 119%;
 
 }
 #bodyg{
