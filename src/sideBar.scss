@@ -33,17 +33,27 @@ ul{
     width: 18%;
     font-size: 20px;
     text-decoration: none;
-    color: white;
     text-align: center;
     height: 36px;
     margin-left: 5px;
-    background-color: $secondary-color;
-    border: 2px solid $primary-color;
-}
+    color: white;
+    border-bottom: 2px solid #01fe87;
+    background-size: 400% 400%!important;
+    background: linear-gradient(to bottom, #35373f 50%, #01fe87 50%);}
 .list>a:hover{
-    background-color: $primary-color;
     color: $secondary-color;
+    animation: ToTop 1s forwards;
 }
+@keyframes ToTop {
+    0%{    
+        background-position-y:0%;
+    }
+    100%{
+        background-position-y:100%;
+    }
+}
+
+
 
 .list{
     display: flex;

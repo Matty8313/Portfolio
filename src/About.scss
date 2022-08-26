@@ -1,5 +1,5 @@
 $primary-color: #01fe87;
-$secondary-color:#262626;
+$secondary-color:#252839;
 $third-color:rgb(187, 187, 187);
 $next-color:#525252;
 $circleWidth: 40vw;
@@ -9,6 +9,7 @@ $circleWidth: 40vw;
     z-index: -2;
     position: absolute;
     margin-top: 6vh;
+    display: none;// tu chwilowo 
     }
 .circleAbout{
     width: $circleWidth;
@@ -189,4 +190,70 @@ $circleWidth: 40vw;
 
     }
 
+}
+#writeBox{
+    position: relative;
+    width: 50vw;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-align: center;
+    padding: 30px;
+    font-size: 2vw;
+    float: left;
+}
+#writeBox2{
+    position: relative;
+    background-color: $secondary-color;
+    color: $primary-color;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    animation: Start 4s forwards;
+    float: left;
+    
+}
+#writeBox3{
+    position: relative;
+    background-color: $primary-color;
+    text-align: center;
+    padding: 30px;
+    font-size: 2vw;
+    animation: text 3s forwards;
+    animation-direction: reverse;
+    float: left;
+}
+@keyframes Start{
+    0%{
+        width: 30vw;
+    }
+    100%{
+        width: 0vw;
+    }
+}
+@keyframes text{
+    0%{
+        color: $secondary-color;
+        width: 30vw;
+        display: block;
+        font-size: 2vw;
+        
+    }
+    5%{
+        color: #fff0;
+        display: none;
+        font-size: 1vw;
+    }
+    100%{
+        color: #fff0;
+        width: 0vw;
+        display: none;
+        font-size: 1px;
+    }
+}
+#wrap-Box{
+background-color: red;
+position: absolute;
+top: 100px;
+display: flex;
+min-height: 30vh;
 }

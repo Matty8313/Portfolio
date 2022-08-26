@@ -5,16 +5,30 @@ $seconday: #252839;
     margin-left: 0px;
     text-align: center;
     width: 100%;
-    background-color: $seconday;
     height: 50vh;
     position: relative;
+    background: linear-gradient(90deg, #252839 50%, #01fe87);
+    background-position: 50% 50%;
+    background-size: 400% !important;
+    animation:back 8s infinite;
+}
+@keyframes back{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 70% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 
 }
 #string{
     position: relative;
     font-size: 6vw;
-    -webkit-text-stroke: 0.2vw $primary;
-    color:$seconday;
+    -webkit-text-stroke: 0.2vw #464646;
+    color: #25283900;
     width: 29vw;
     top: 29vh;
     left: 4vh;
