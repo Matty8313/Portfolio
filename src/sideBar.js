@@ -26,8 +26,8 @@ export default function SideBar() {
             <ul className="list">
                 <Link to="/Portfolio"><li className="item" onClick={toggleMenu}>Main</li></Link>
                 <Link to="/About"><li className="item" onClick={toggleMenu}>About</li></Link>
-                <Link to="Skills"><li className="item" onClick={toggleMenu}>Skills</li></Link>
-                <Link to="Projects"><li className="item" onClick={toggleMenu}>Projects</li></Link>
+                <Link to="/Skills"><li className="item" onClick={toggleMenu}>Skills</li></Link>
+                <Link to="/Projects"><li className="item" onClick={toggleMenu}>Projects</li></Link>
                 
             </ul>)}
             <button id="btn-x" onClick={toggleMenu}>Menu</button>
