@@ -3,7 +3,6 @@ import SideBar from './sideBar';
 import { BrowserRouter  as Router, Route, Switch} from 'react-router-dom';
 import Logo from './Logo';
 import About from './About';
-import CV from './CV';
 import Projects from './Projects';
 import Skills from './Skills';
 
@@ -25,7 +24,7 @@ function App() {
             <Route path="/About" component={About}/>
             <Route path="/Skills" component={Skills}/>
             <Route path="/Projects" component={Projects}/>
-            <Route path="/" component={Logo}/>
+            <Route path="/Portfolio" component={Logo}/>
           </Switch>
     </div>
     </Router>
