@@ -22,6 +22,7 @@ export default function About(props) {
    
   return (
     <>
+    <div id="navi"></div>
     <div id="wrap-Box">
     <div  id="writeBox" ></div>
     <div  id="writeBox2" ></div>
