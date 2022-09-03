@@ -116,16 +116,28 @@ nav{
     width:75px;
     background-color: $mycolor;
 }
+@keyframes ShowMenu{
+    from{
+        width: 0vw;
+    }
+    to{
+        width: 50vw;
 
+    }
+}
 @media screen and (max-width: 500px) {
     .list{
         flex-direction: column;
         height: auto;
         position: relative;
         background-color: $secondary-color;
-        width: 100vw;
-        padding: 16px;
-        padding-top: 57px;
+        width: 50vw;
+        float: right;
+        padding-top: 60px;
+        height: 100vh;
+        justify-content: unset;
+        animation: ShowMenu 2s forwards;
+
         
     }
     ul>a{
@@ -138,7 +150,11 @@ nav{
     
     #btn-x{
         display: block;
-        border: 2px solid white;
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+    #btn-x:hover{
+        background-color: white;
     }
     #background {
         height: 184px;
@@ -154,7 +170,6 @@ nav{
         background-color: red;
         background-size: 400% 400%!important;
         background: linear-gradient(to bottom, #35373f00 50%, #01fe87 50%);
-        border: 1px solid white;
         color: white;
     }
 }

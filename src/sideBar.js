@@ -10,6 +10,17 @@ export default function SideBar() {
   const [navToggle, setNavToggle] = useState(false);
   const toggleMenu =()=>{
     setNavToggle(!navToggle)
+    if(navToggle === true){
+      document.getElementById('btn-x').innerText = "Menu"
+      document.getElementById('btn-x').style.backgroundColor = '#01fe87'
+      document.getElementById('btn-x').style.color = 'black'
+    }
+    else{
+      document.getElementById('btn-x').innerText = "x"
+      document.getElementById('btn-x').style.backgroundColor = '#01fe8700'
+      document.getElementById('btn-x').style.color = '#01fe87'
+    }
+    
   }
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   useEffect(()=>{

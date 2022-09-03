@@ -1,42 +1,29 @@
 $primary: #01fe87;
 $seconday: #252839;
 
-#writing1{
+#writing{
     margin-left: 0px;
     text-align: center;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     position: relative;
-    background: linear-gradient(90deg, #252839 50%, #01fe87);
-    background-position: 50% 50%;
-    background-size: 400% !important;
-    animation:back 8s infinite;
+    background-color: #252839;
+    animation:back11 8s infinite;
 }
-@keyframes back{
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 70% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
 
-}
-#string1{
+#string{
     position: relative;
     font-size: 6vw;
     -webkit-text-stroke: 0.2vw #464646;
     color: #25283900;
-    width: 29vw;
-    top: 29vh;
-    left: 4vh;
+    width: 35vw;
+    top: -70%;
+    left: 26%;
 }
-#string1::before{
+#string::before{
     content: attr(data-text);
     position: absolute;
-    width: 50vw;
+    width: 34vw;
     height: 100%;
     color: $primary;
     -webkit-text-stroke:rgba(0, 0, 0, 0);
@@ -45,11 +32,18 @@ $seconday: #252839;
     animation: Animates 6s linear infinite;
 
 }
-@keyframes Animates{
+@keyframes Animates1{
     0%,10%,100%{
         width: 0%;
     }
     70%,90%{
         width: 100%;
     }
+}
+#triangle{
+    width: 100px;
+    height: 100%;
+    border-left: 168px solid #01fe87;
+    border-top: 0px solid #25283900;
+    border-bottom: 280px solid #25283900;
 }

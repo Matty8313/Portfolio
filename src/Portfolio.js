@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import './Portfolio.scss';
 
 
 function Portfolio() {
   return (
    <>
-   <div id="writing">
-   <h1 data-text="PORTFOLIO" id="string">PORTFOLIO</h1>
+   <div id="writing1">
+   <h1 data-text="PORTFOLIO" id="string1">PORTFOLIO</h1>
    </div>
    </>
   );

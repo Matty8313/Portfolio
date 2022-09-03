@@ -1,5 +1,7 @@
 import React from 'react'
 import "./About.scss"
+import Portfolio2 from "./Portfolio2";
+import Photo1 from "./doStr.jpg"
 
 export default function About(props) {
     let number = 0
@@ -22,11 +24,23 @@ export default function About(props) {
    
   return (
     <>
-    <div id="navi"></div>
-    <div id="wrap-Box">
-    <div  id="writeBox" ></div>
-    <div  id="writeBox2" ></div>
-    <div  id="writeBox3" >It started with creating my own website for wordpress because I wanted to create a blog about SEO</div>
+    <div id="background"><img id="backbacki" src={Photo1}></img></div>
+    <div class="container-2">
+      <div id="wrap-Box">
+      <div  id="writeBox" ></div>
+      <div  id="writeBox2" ></div>
+      <div  id="writeBox3" ><text id="txt">It started with creating my own website for wordpress because I wanted to create a blog about SEO</text></div>
+    </div>
+    </div>
+    <div class="container-3">
+      <div id="wrap-Box">
+      <div id="leftBar">
+          <div id="circle"></div>
+          <text id="cText">ashgdhasbdhasbdhbasdh</text>
+      </div>
+      <div id="rightBar"><Portfolio2/></div>
+    
+      </div>
     </div>
     </>
   )
