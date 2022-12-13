@@ -6,7 +6,7 @@ $font-size:30px;
 $yellow-col:#ffdd00;
 $next-color:#2c2c2c;
 
-$primary-color: #01fe87;
+$primary-color: #c700ff;
 $secondary-color:#262626;
 $third-color:rgb(187, 187, 187);
 $next-color: rgba(0, 0, 0, 0);
@@ -37,13 +37,13 @@ ul{
     height: 36px;
     margin-left: 5px;
     color: white;
-    border-bottom: 2px solid #01fe87;
+    border-bottom: 2px solid white;
     background-size: 400% 400%!important;
-    background: linear-gradient(to bottom, #35373f00 50%, #01fe87 50%);
+    background: linear-gradient(to bottom, #35373f00 50%, white 50%);
 }
 .list>a:hover{
     
-    animation: ToTop 1s forwards;
+    animation: ToTop 0.5s forwards;
 }
 @keyframes ToTop {
     0%{    
@@ -80,12 +80,12 @@ ul{
 
 header{
     height: 100px;
-    position: absolute;
     width: 99vw;
     display: flex;
     animation-duration: 1s;
-    background-color: #2220;
+    background-color: rgb(37, 40, 57);
     z-index: 3;
+    position: relative;
 
     
 }
@@ -108,8 +108,7 @@ nav{
     right: 10px;
     top: 10px;
     animation: none;
-    background-color: black;
-    color: white;
+    color: white!important;
     margin-right: 19px;
 }
 #btn-x:hover{
@@ -136,7 +135,7 @@ nav{
         padding-top: 60px;
         height: 100vh;
         justify-content: unset;
-        animation: ShowMenu 2s forwards;
+        animation: ShowMenu 0.5s forwards;
 
         
     }
@@ -150,11 +149,9 @@ nav{
     
     #btn-x{
         display: block;
-        background-color: $primary-color;
+        background-color: #262626;
         color: $secondary-color;
-    }
-    #btn-x:hover{
-        background-color: white;
+        border: 1px solid white;
     }
     #background {
         height: 184px;
@@ -169,8 +166,11 @@ nav{
     .item{
         background-color: red;
         background-size: 400% 400%!important;
-        background: linear-gradient(to bottom, #35373f00 50%, #01fe87 50%);
+        background: linear-gradient(to bottom, #35373f00 50%, $primary-color 50%);
         color: white;
+    }
+    .item:hover{
+        color: $font-color;
     }
 }
 #hello {

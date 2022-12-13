@@ -3,6 +3,7 @@ import './Portfolio.scss';
 
 
 function Portfolio() {
+  
   return (
    <>
    <div id="writing1">

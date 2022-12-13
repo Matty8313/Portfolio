@@ -1,4 +1,4 @@
-$primary-color: #01fe87;
+$primary-color: #c700ff;
 $secondary-color:#262626;
 $third-color:black;
 $next-color:#525252;
@@ -36,7 +36,7 @@ $next-color:#525252;
     
 
     h2{
-        color: $primary-color;
+        color: white;
         font-weight: revert;
     }
     button{
@@ -82,4 +82,18 @@ div.container:nth-child(2) {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     position: relative;
+}
+#Skills > article{
+    text-align: center;
+}
+#Skills{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#btn-contact{
+    margin-left: 20px;
+    border: 2px solid #8f20db;
+    background-color: #00ffe500;
+    color: white;
+    width: fit-content;
 }

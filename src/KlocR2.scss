@@ -1,0 +1,92 @@
+$primary-color: #c700ff;
+$secondary-color:#262626;
+$third-color:black;
+$next-color:#525252;
+
+#left-lego{
+    background-color: #252839;
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+    z-index: 2;
+    padding: 34px;
+
+}
+.col-sm-12 h2 {
+    color:$secondary-color;
+}
+.col-sm-12 p{
+    color: white;
+    width: 100%;
+    height: 126px;
+}
+.col-sm-12{
+    float: left;
+
+}
+.to-left{
+    width: 100%;
+    float: left;
+}
+#cont-2{
+    padding: 10px;
+
+    
+
+    h2{
+        color: white;
+        font-weight: revert;
+    }
+    button{
+        background-color: #00ffe700;
+        border: 2px solid $primary-color;
+        color: white;
+        border-radius: 0px;
+        margin-top: 118px;
+    }
+}
+.pictures{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.btn-2-n{
+    background-color: #00ffe700;
+    border-radius: 37px;
+    border: 2px solid $primary-color;
+    color:white;
+}
+
+#upper-margin{
+    background-color: white;
+    min-height: 600px;
+    #cont-2{
+        padding: 20px;
+        border-radius: 15px;
+    }
+}
+div.container:nth-child(2) {
+
+    margin-top: 30px;
+}
+
+.row{
+    animation-name: ShowSkill;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.img-mission{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}

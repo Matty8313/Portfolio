@@ -13,25 +13,61 @@
  flex-direction: row;
  max-width: 1200px;
  width: 100%;
- box-shadow: 12px 12px 14px #252839;
 }
 #writeBox{
 flex:2;
 background-color: #252839;
 min-height: 200px;
 padding: 3%;
-color: #01fe87;
-border: 10px solid #cecece;
+color: #fff;
+border: 3px solid #8f20db;
 font-size: 2vw;
 
 }
+#writeBox-a{
+    flex:2;
+    min-height: 200px;
+    color: black;
+    font-size: 2vw;
+    
+}
+#komp{
+    border-left: 2px solid #252839;
+    border-right: 2px solid #252839;
+    background-color: #252839;
+    width: 30px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #252839;
+}
+#kom2{
+    border-radius: 100%;
+    width: 160px;
+    margin: auto;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+    background-color: #8f20db;
+    text-align: center;
+    color: #8f20db;
+    
+}
 #writeBox3{
 flex:1;
-background-color: #cecece;
 min-height: 200px;
 padding: 3%;
-color: #252839;
 font-size: 2vw;
+animation: 5s forwards ShowStart-1;
+}
+@keyframes ShowStart-1 {
+    0%{
+        color: #ffffff;
+    }
+    100%{
+        color: #252839;
+    }
 }
 #txt{
     display: inline-block;
@@ -39,12 +75,6 @@ font-size: 2vw;
     line-height: auto;
 }
 
-@media only screen and (max-width:768px) {
-    #wrap-Box{
-        flex-direction: column;
-    }
-    
-}
 @media only screen and (max-width:768px) {
     #wrap-Box{
         flex-direction: column;
@@ -57,6 +87,9 @@ font-size: 2vw;
     }
     #rightBar{
         border-left: 10px solid #252839;
+    }
+    #container-2-a{
+        display: none;
     }
 }
 

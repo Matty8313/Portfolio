@@ -5,31 +5,31 @@ import { Link } from 'react-router-dom'
 
 export default function Klocreverse(props) {
   return (
-    <div class="container" id="cont-2">
-    <div class="row">
-      <div class="col-sm-12 col-md-4" id="left-lego">
-      <h2 >{props.about}</h2>
-       <p id="content-2">{props.txt} </p>
+    <div className="container" id="cont-2">
+    <div className="row">
+      <div className="col-sm-12 col-md-4" id="left-lego">
+      <h2 id={props.nameName1}>{props.about}</h2>
+       <p className="content-2" id={props.idName1}>{props.txt} </p>
        <Link to={props.link}>
-          <button class="btn-2-n">
+          <button className="btn-2-n" id="btn-more-1">
               more
           </button>
        </Link>
       </div>
-      <div class="col-sm-12 col-md-4" id="left-lego">
-      <h2 >{props.about2}</h2>
-       <p id="content-2">{props.txt2} </p>
+      <div className="col-sm-12 col-md-4" id="left-lego">
+      <h2 id={props.nameName2}>{props.about2}</h2>
+       <p className="content-2" id={props.idName2}>{props.txt2} </p>
        <Link to={props.link2}>
-          <button class="btn-2-n">
+          <button className="btn-2-n" id="btn-more-2">
               more
           </button>
        </Link>
       </div>
-      <div class="col-sm-12 col-md-4" id="left-lego">
-      <h2 >{props.about3}</h2>
-       <p id="content-2">{props.txt3} </p>
+      <div className="col-sm-12 col-md-4" id="left-lego">
+      <h2 id={props.nameName3}>{props.about3}</h2>
+       <p className="content-2" id={props.idName3}>{props.txt3} </p>
        <Link to={props.link3}>
-          <button class="btn-2-n">
+          <button className="btn-2-n" id="btn-more-3">
               more
           </button>
        </Link>

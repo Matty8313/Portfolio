@@ -1,91 +1,106 @@
-#circle-const{
+/*    <div id="allPhone">
+        <div id="upPhone"></div>
+        <div id="screenPhone"></div>
+        <div id="downPhone"></div>
+    </div>
+        <div class="container-phone">
+      <div class="item-phone">
+    <Phone/>
+      </div>
+      <div class="item-phone">
+    <Phone/>
+      </div>
+      <div class="item-phone">
+    <Phone/>
+      </div>*/
+$width: 300px;
+#allPhone{
+width: $width;
+height: 2 * $width;
+background-color: RED;
+}
+@media screen and (max-width: 860px) {
+    #allPhone {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-phone{
+        flex-direction: column;
+    }
+    .item-phone{
+        margin: auto!important;
+
+    }
+    .item-phone-2{
+        margin-top: 97px;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+    #lista-vid{
+        margin-top: 0px!important;
+        margin-bottom: 97px;
+    }
+}
+  #allPhone {
+    width: $width;
+    height: 2 * $width;
+    background-color: black;
+    position: relative;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+#upPhone{
+    width: 0.37 * $width;
+    height: 10px;
+    background-color: white;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#screenPhone{
+    width: $width*0.85;
+    height: 1.55 * $width;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    overflow: hidden;      
+}
+#downPhone{
+    border-radius: 100%;
+    border: 3px solid white;
+    width: 0.1 * $width;
+    height: 0.1 * $width;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+
+}
+.container-phone{
+    display: flex;
+}
+.item-phone-2{
+    flex-grow: 2;
     background-color: red;
-    height: 200px;
-    width: 200px;
-    border-radius: 100%;
+    padding: 20px;
+    animation: 5s forwards ShowStart-1;
 }
-.game-box{
-    float:left;
-    width: 20vw;
-    border: 3px solid green;
-    height: 300px;
-    text-align: center;
+#myweek{
+    margin-top: -25px;
+    overflow: hidden;
 }
-#game-money{
-    border-color: black;
-    height:100px;
-    background-color: yellow;
+.item-phone-2{
+    margin: 97px;
+    color: #252839;
+    font-size: 20px;
+    border-left: 6px solid #8f20db;
+    background-color: #fff;
 }
-#game-houses{
-    border-color: brown;
+.item-phone{
+    margin-top: 50px;
+    margin-left: 50px;
 }
-#game-risk{
-    border-color: red;
-}
-#game-money-2{
-    float: right;
-    width: 10vw;
-}
-#game{
-    padding-top: 120px;
-}
-#cost{
-    padding-top: 5vw;
-    
-}
-.item2{
-    width: 38vw;
-    float: left;
-    text-align: center;
-    height: 200px;
-    border: 2px solid black;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 40px;
-}
-#castle{
-    width: 90%;
-    
-}
-.material{
-    z-index: 5;
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-}
-#gold{
-    background-color: yellow;
-    margin-top: 670px;
-    margin-left: calc(50vw - 20px);
-    /* od zamku do domku
-    background-color: yellow;
-    margin-top: 428px;
-    margin-left: calc(25vw - 20px);
-    */
-    animation-duration: 1s;
-}
-#gold2{
-    background-color: yellow;
-}
-#gold3{
-    background-color: yellow;
-}
-#food{
-    background-color: rgb(71, 43, 0);
-    margin-top: 920px;
-    margin-left: calc(73vw - 20px);
-}
-@keyframes GetGold{
-    0%{
-        margin-top: 670px;
-        margin-left: calc(50vw - 20px);
-    }
-    100%{
-        margin-top: 428px;
-        margin-left: calc(25vw - 20px);
-        animation-name: none;
-        
-    }
+#video-lista{
+    margin-left:auto;
+    margin-right: 50px;
 }
